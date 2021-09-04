@@ -31,16 +31,25 @@
 }
 
 .navbar-left__item {
-    padding: 0 10px
+    padding: 0 10px;
+    position: relative;
 }
 
 .navbar-left__item a {
     margin: 0 2px;
 }
 
-.navbar-left__item>a>.fa-instagram {
-    font-size: 16px;
-    line-height: 100%;
+.navbar-left__item-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-left__item-link .fa-facebook {
+    font-size: 12px;
+}
+
+.navbar-left__item--qr:hover .navbar__qr {
+    display: block;
 }
 
 .navbar-right {
@@ -49,8 +58,117 @@
 
 .navbar-right__item {
     padding: 0 10px;
+    position: relative;
 }
 
 .navbar-right__item a {
     margin: 0 2px;
+}
+
+
+/* ----- Navbar QR code ----- */
+
+.navbar__qr {
+    width: 184px;
+    background: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 150%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #d3d3d3;
+    display: none;
+    animation: fadeIn 0.5s ease;
+    -webkit-animation: fadeIn 0.5s ease;
+}
+
+.navbar__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.navbar__apps {
+    display: flex;
+    padding: 0 3px;
+    margin: 0 4px 4px;
+    justify-content: space-evenly;
+}
+
+.navbar__qr-download-img {
+    height: 16px;
+}
+
+
+/* ----- Navbar notification ----- */
+
+.notify {
+    position: absolute;
+    top: 150%;
+    right: -100%;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+
+.notify__header {
+    height: 40px;
+    background-color: #fff;
+}
+
+.notify__header h3 {
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.notify__img {
+    width: 30%;
+}
+
+
+/* .notify__list {}
+
+.notify__item {}
+
+.notify__link {}
+
+
+
+.notify__info {}
+
+.notify__title {}
+
+.notify__description {} */
+
+
+/* ----- Animation ----- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

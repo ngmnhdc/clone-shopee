@@ -24,16 +24,41 @@
                 <ul class="navbar-left">
                     <li class="navbar-left__item"><a href="#">Kênh người bán</a></li>
                     <li class="navbar-left__item"><a href="#">Trở thành người bán</a></li>
-                    <li class="navbar-left__item"><a href="#">Tải ứng dụng</a></li>
+                    <li class="navbar-left__item navbar-left__item--qr">
+                        <a href="#">Tải ứng dụng</a>
+                        <div class="navbar__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                            <div class="navbar__apps">
+                                <a href=""><img src="./assets/img/ggplay.png" alt="Google Play" class="navbar__qr-download-img"></a>
+                                <a href=""><img src="./assets/img/appstore.png" alt="App Store" class="navbar__qr-download-img"></a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="navbar-left__item">
                         Kết nối
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="navbar-left__item-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="navbar-left__item-link"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
                 <ul class="navbar-right">
                     <li class="navbar-right__item">
                         <a href="#"><i class="far fa-bell"></i> Thông báo</a>
+                        <div class="notify">
+                            <header class="notify__header">
+                                <h3>Thông báp mới nhận</h3>
+                            </header>
+                            <ul class="notify__list">
+                                <li class="notify__item">
+                                    <a href="#" class="notify__link">
+                                        <img src="./assets/img/innisfree.jpg" alt="" class="notify__img">
+                                        <div class="notify__info">
+                                            <span class="notify__title">Mỹ phẩm Innisfree chính hãng</span>
+                                            <span class="notify__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus magni tenetur hic ratione illo quas, eos distinctio amet minus dolorem neque voluptates quis error, aspernatur repudiandae, fugiat obcaecati nihil!</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navbar-right__item">
                         <a href="#"><i class="far fa-question-circle"></i> Hỗ trợ</a>

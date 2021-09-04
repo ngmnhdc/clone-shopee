@@ -1,0 +1,56 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(to bottom, rgb(246 63 46), rgb(254 100 50));
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar li a:hover {
+    color: #ddd;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left__item {
+    padding: 0 10px
+}
+
+.navbar-left__item a {
+    margin: 0 2px;
+}
+
+.navbar-left__item>a>.fa-instagram {
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-right__item {
+    padding: 0 10px;
+}
+
+.navbar-right__item a {
+    margin: 0 2px;
+}

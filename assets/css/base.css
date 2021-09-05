@@ -2,6 +2,9 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --header-height: 120px;
+    --navbar-height: 42px;
+    --searchbar-height: calc(var(--header-height) - var(--navbar-height))
 }
 
 * {

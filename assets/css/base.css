@@ -18,6 +18,10 @@ html {
     box-sizing: border-box;
 }
 
+li {
+    list-style-type: none;
+}
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -31,4 +35,53 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+/* ----- Animation ----- */
+
+
+/* fadeIn */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* growth */
+
+@keyframes growth {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growth {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }

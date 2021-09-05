@@ -105,10 +105,72 @@
                     </svg>
                 </div>
                 <div class="search">
-
+                    <div class="search__input-wrap">
+                        <input type="text" class="search__input" placeholder="Tìm kiếm sản phẩm tại đây">
+                        <div class="search__history">
+                            <h3 class="history__heading">Lịch sử tìm kiếm</h3>
+                            <ul class="history__list">
+                                <li class="history__item">
+                                    <a href="#">Sửa rữa mặt</a>
+                                </li>
+                                <li class="history__item">
+                                    <a href="#">Giày thể thao</a>
+                                </li>
+                                <li class="history__item">
+                                    <a href="#">Dụng cụ nhà bếp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search__btn">
+                        <i class="search__icon fas fa-search"></i>
+                    </div>
                 </div>
                 <div class="cart">
-                    <i class="cart__icon fas fa-shopping-cart"></i>
+                    <div class="cart__container">
+                        <i class="cart__icon fas fa-shopping-cart"></i>
+                        <span class="cart__icon-notice">3</span>
+                        <div class="cart__list">
+                            <!-- Giỏ hàng trống -->
+                            <img src="./assets/img/cart_empty.png" alt="" class="cart__list--empty-img">
+                            <p class="cart__list--empty-msg">Chưa có sản phẩm</p>
+                            <!-- Giỏ hàng có sản phẩm -->
+                            <h3 class="cart__heading">Sản phẩm đã thêm</h3>
+                            <ul class="cart__list-item">
+                                <li class="cart__item">
+                                    <img src="./assets/img/iphone_case.jpg" alt="" class="item__img">
+                                    <div class="item__info">
+                                        <div class="item__info-top">
+                                            <h6 class="item__name">Ốp lưng Iphone 6</h6>
+                                            <span class="item__price">100.000đ</span>
+                                            <span class="item__multiply">x</span>
+                                            <span class="item__quantity">2</span>
+                                        </div>
+                                        <div class="item__info-bottom">
+                                            <span class="item__description"><b>Phân loại:</b> Trắng, Xanh lá</span>
+                                            <span class="item__remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__item">
+                                    <img src="./assets/img/keyboard.jpg" alt="" class="item__img">
+                                    <div class="item__info">
+                                        <div class="item__info-top">
+                                            <h6 class="item__name">Keyboard Varmilo VA108M</h6>
+                                            <span class="item__price">1.499.000đ</span>
+                                            <span class="item__multiply">x</span>
+                                            <span class="item__quantity">1</span>
+                                        </div>
+                                        <div class="item__info-bottom">
+                                            <span class="item__description"><b>Phân loại:</b> Xanh lá</span>
+                                            <span class="item__remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn__primary">Xem giỏ hàng</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

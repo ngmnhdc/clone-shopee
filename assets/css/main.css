@@ -65,6 +65,7 @@
 
 .navbar-right {
     display: flex;
+    align-items: center;
     padding: 0;
 }
 
@@ -259,6 +260,89 @@
     font-size: 1.4rem;
     font-weight: 400;
     border-top: 1px solid #eee;
+}
+
+
+/* ----- Navbar user ----- */
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.user:hover .user__navbar {
+    display: inline-block;
+}
+
+.user__img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user__name {
+    padding: 0;
+    margin: 0 4px;
+}
+
+.user__navbar {
+    position: absolute;
+    top: 160%;
+    right: 0;
+    width: 180px;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index: 4;
+    padding: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #d3d3d3;
+    animation: fadeIn 0.5s ease;
+    -webkit-animation: fadeIn 0.5s ease;
+    display: none;
+}
+
+.user__navbar::before {
+    content: "";
+    border-style: solid;
+    border-width: 14px 16px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    right: 24px;
+    top: -28px;
+}
+
+.user__navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+    width: 130px;
+    height: 20px;
+}
+
+.user__item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    display: block;
+    padding: 10px 16px;
+}
+
+.user__item a:hover {
+    background-color: #f7f7f7;
+}
+
+.user__item a:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.user__item a:last-child {
+    border-radius: 0 0 3px 3px;
 }
 
 

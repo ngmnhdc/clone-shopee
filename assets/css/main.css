@@ -1,3 +1,5 @@
+/* -----===== HEADER =====----- */
+
 .header {
     height: 120px;
     background-image: linear-gradient(to bottom, rgb(246 63 46), rgb(254 100 50));
@@ -371,18 +373,17 @@
 .search {
     display: flex;
     flex: 1;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 3px;
-    margin-top: 4px;
-    align-items: center;
+    flex-direction: column;
 }
 
 .search__input-wrap {
     display: flex;
     flex: 1;
-    height: 100%;
-    position: relative;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 4px;
+    align-items: center;
 }
 
 .search__input {
@@ -462,6 +463,24 @@
     margin: 9px 0;
     color: white;
 }
+
+.search__popular {
+    height: 26px;
+    margin: 0 0 0 -6px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search__item>a {
+    padding: 0 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ----- Cart ----- */
 
 .cart {
     width: 120px;

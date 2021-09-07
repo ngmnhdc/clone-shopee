@@ -2,7 +2,11 @@
 
 .header {
     height: 120px;
+    width: 100%;
     background-image: linear-gradient(to bottom, rgb(246 63 46), rgb(254 100 50));
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
 .navbar {
@@ -726,6 +730,10 @@
 
 
 /* ---------- Banner ---------- */
+
+.content {
+    margin-top: 140px;
+}
 
 .content__banner {
     display: flex;

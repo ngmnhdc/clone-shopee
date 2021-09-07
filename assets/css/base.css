@@ -18,6 +18,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 li {
     list-style-type: none;
 }
@@ -87,5 +91,20 @@ a:hover {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+
+/* moveTop */
+
+@keyframes moveTop {
+    to {
+        transform: translateY(-2px);
+    }
+}
+
+@-webkit-keyframes moveTop {
+    to {
+        transform: translateY(-2px);
     }
 }

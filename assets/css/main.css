@@ -13,6 +13,7 @@
     margin-right: auto;
     font-size: 1.3rem;
     color: white;
+    padding: 10px 0 0 0;
 }
 
 .navbar li {
@@ -63,6 +64,7 @@
 
 .navbar-right__item:hover .notify {
     display: block;
+    text-decoration: none;
 }
 
 .navbar-right {
@@ -227,6 +229,7 @@
 .notify__title {
     display: block;
     font-size: 1.4rem;
+    text-decoration: none;
     color: #333;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -239,6 +242,7 @@
 .notify__description {
     display: block;
     font-size: 1.2rem;
+    text-decoration: none;
     line-height: 1.6rem;
     color: #666;
     display: -webkit-box;
@@ -314,7 +318,7 @@
     border-color: transparent transparent #fff transparent;
     position: absolute;
     right: 24px;
-    top: -28px;
+    top: -26px;
 }
 
 .user__navbar::after {
@@ -347,6 +351,10 @@
     border-radius: 0 0 3px 3px;
 }
 
+.user__item--separate {
+    border-top: 1px solid #eee;
+}
+
 
 /* ----- Search bar ----- */
 
@@ -363,6 +371,11 @@
 .logo {
     height: 100%;
     width: 200px;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .logo__img {
@@ -413,6 +426,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: none;
     overflow: hidden;
+    z-index: 2;
 }
 
 .history__heading {
@@ -535,7 +549,7 @@
     border: 1px solid #d3d3d3;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: none;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: growth 0.2s ease;
     -webkit-animation: growth 0.2s ease;
     z-index: 4;
@@ -690,7 +704,7 @@
     float: right;
     height: 40px;
     width: 160px;
-    line-height: 40px;
+    line-height: 32px;
     font-size: 1.4rem;
     margin: 10px;
     cursor: pointer;
@@ -699,9 +713,68 @@
 
 .btn:hover {
     opacity: 0.8;
+    color: #fff;
 }
 
 .btn__primary {
     background-color: rgb(255, 99, 46);
     color: #fff;
+}
+
+
+/* -----===== CONTENT =====----- */
+
+
+/* ---------- Banner ---------- */
+
+.content__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px auto;
+    /* background-color: #999; */
+}
+
+.banner-left {
+    display: flex;
+    height: 100%;
+    flex: 2 1 0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.carousel-indicators>li:hover {
+    cursor: pointer;
+}
+
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner-right__item {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-right__item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

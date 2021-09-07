@@ -14,12 +14,16 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 li {
     list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .grid {

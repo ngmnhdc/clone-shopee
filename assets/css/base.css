@@ -30,6 +30,9 @@ a:hover {
     text-decoration: none;
 }
 
+
+/* ----- Responsive ----- */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -43,6 +46,18 @@ a:hover {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.grid__col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 

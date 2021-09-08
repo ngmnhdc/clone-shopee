@@ -15,7 +15,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: white;
     padding: 10px 0 0 0;
 }
@@ -59,7 +59,7 @@
 }
 
 .navbar-left__item-link .fa-facebook {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .navbar-left__item--qr:hover .navbar__qr {
@@ -270,6 +270,10 @@
     font-size: 1.4rem;
     font-weight: 400;
     border-top: 1px solid #eee;
+}
+
+.notify__footer-btn:hover {
+    color: rgb(255, 99, 46);
 }
 
 
@@ -493,7 +497,7 @@
 
 .search__item>a {
     padding: 0 6px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
 }
@@ -851,6 +855,7 @@
     margin-right: auto;
     margin-bottom: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
 }
 
 .banner-full-width__img {

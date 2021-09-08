@@ -742,6 +742,7 @@
     max-width: 1200px;
     height: 240px;
     margin: 20px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner-left {
@@ -810,7 +811,7 @@
     background: #fff;
     padding: 20px 12px 8px;
     border-radius: 4px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24x;
 }
 
 .category__item {
@@ -848,6 +849,8 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner-full-width__img {
@@ -863,7 +866,6 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -873,7 +875,7 @@
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: #333;
+    color: #555;
     padding: 10px 20px;
 }
 
@@ -937,12 +939,71 @@
 }
 
 .content__flash-sale {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
     font-size: 1.8rem;
+    overflow: hidden;
+}
+
+.flash-sale__heading {
+    height: 54px;
+    padding: 12px 0;
+    display: flex;
+}
+
+.flash-sale__heading-img {
+    height: 100%;
+    padding: 4px 20px 2px;
+}
+
+.flash-slae__heading-clock {
+    height: 100%;
+    display: block
+}
+
+.flash-sale__heading-right {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.flash-sale__heading-right>a {
+    color: rgb(255, 99, 46);
+}
+
+.flash-sale__heading-right>a:hover {
+    color: rgb(255, 99, 46, 0.8);
+}
+
+.icon-angle-right {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.flash-sale__list {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
+
+.flash-sale__item {
+    width: 200px;
+    height: 240px;
+    border: 1px solid #eee;
+}
+
+.flash-sale__item:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.flash-sale__item:last-child {
+    border-bottom-right-radius: 4px;
 }

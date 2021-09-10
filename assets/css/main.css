@@ -943,6 +943,9 @@
     text-align: center;
 }
 
+
+/* ----- Flash sale ----- */
+
 .content__flash-sale {
     display: flex;
     flex-direction: column;
@@ -1011,4 +1014,116 @@
 
 .flash-sale__item:last-child {
     border-bottom-right-radius: 4px;
+}
+
+
+/* ----- Suggestion ----- */
+
+.content__suggestion {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.suggestion__heading {
+    background-color: #fff;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(255, 99, 46);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+}
+
+.suggestion__heading-item {
+    margin: 10px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+}
+
+.suggestion__heading-item:hover {
+    cursor: pointer;
+}
+
+.suggestion__heading-item--active {
+    border-bottom: 3px solid rgb(255, 99, 46);
+}
+
+.suggestion__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.suggestion__item {
+    width: 188px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.suggestion__item:hover .suggestion__item-img {
+    opacity: 0.8;
+    border: 2px solid transparent;
+}
+
+.suggestion__item:hover {
+    cursor: pointer;
+    border: 1px solid rgb(255, 99, 46);
+}
+
+.suggestion__item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.suggestion__item-bottom {
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.suggestion__item-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    color: #333;
+    line-height: 2.4rem;
+    margin-bottom: 8px;
+}
+
+.suggestion__item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggesstion__item-price {
+    font-size: 1.6rem;
+    color: rgb(255, 99, 46);
+    margin: 0;
+}
+
+.suggesstion__item-sold {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0;
 }

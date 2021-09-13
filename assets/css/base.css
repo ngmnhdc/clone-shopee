@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: rgb(255, 99, 46);
     --header-height: 120px;
     --navbar-height: 46px;
     --searchbar-height: calc(var(--header-height) - var(--navbar-height))

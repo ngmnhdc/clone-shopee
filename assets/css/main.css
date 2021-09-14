@@ -746,7 +746,6 @@
     max-width: 1200px;
     height: 240px;
     margin: 20px auto;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner-left {
@@ -1202,17 +1201,19 @@
 
 /* -----===== FOOTER =====----- */
 
-.footer {
+.footer-top {
     width: 100%;
     background-color: #eee;
 }
 
-.footer__container {
+.footer__row {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .footer__column {
@@ -1325,4 +1326,96 @@
     justify-content: space-evenly;
     width: 40%;
     padding-left: 6px;
+}
+
+.footer__divider {
+    width: 1200px;
+    border: 1px solid #ccc;
+    margin: 0 auto 30px;
+}
+
+.footer__copyright {
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.footer__country {
+    display: flex;
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.footer__country-list {
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.footer__country-list li {
+    padding: 0 5px;
+    border-right: 1px solid #aaa;
+}
+
+.footer__country-list li:last-child {
+    border-right: none;
+}
+
+.footer__country-list li a {
+    color: #888;
+}
+
+.footer__country-list li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #dfdfdf;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 30px;
+}
+
+.footer-bottom__row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-bottom__row+.footer-bottom__row {
+    margin-top: 20px;
+}
+
+.footer__policy {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__policy-item a {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.footer__policy-item+.footer__policy-item {
+    border-left: 1px solid #888;
+}
+
+.footer__certi-item {
+    margin: 8px;
+}
+
+.footer-address {
+    color: #666;
+    font-size: 1.3rem;
+    text-align: center;
 }

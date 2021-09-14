@@ -1,6 +1,10 @@
 function handleTickInit(tick) {
-    // var nextYear = (new Date()).getFullYear() + 1;
-    Tick.count.down('2021-09-09', { format: ['h', 'm', 's'] }).onupdate = function(value) {
+    var day = (new Date()).getDate() + 1;
+    var month = (new Date()).getMonth() + 1;
+    var year = (new Date()).getFullYear();
+    var nextDay = `${year}-${month}-${day}`;
+
+    Tick.count.down(nextDay, { format: ['h', 'm', 's'] }).onupdate = function(value) {
         tick.value = value;
     };
 }

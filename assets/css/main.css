@@ -834,9 +834,14 @@
     width: 40px;
     height: 40px;
     background-color: var(--white-color);
-    border: 1px solid #999;
     border-radius: 10px;
     justify-items: center;
+}
+
+.category__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .category__item-bottom {
@@ -1071,7 +1076,6 @@
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
-    overflow: hidden;
 }
 
 .suggestion__item:hover .suggestion__item-img {
@@ -1089,6 +1093,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    padding: 4px;
 }
 
 .suggestion__item-bottom {
@@ -1382,8 +1387,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
+    display: flex align-items: center;
     justify-content: center;
     flex-direction: column;
 }
